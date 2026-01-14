@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Sign Up</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            background: white;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1877f2;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .name {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name input {
+            width: 50%;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .gender label {
+            border: 1px solid #ccc;
+            padding: 8px;
+            width: 30%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .signup-btn {
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 60%;
+            margin: 15px auto;
+            display: block;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .text {
+            font-size: 11px;
+            color: gray;
+            text-align: center;
+        }
+
+        a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>facebook</h1>
+    <h3>Create a new account</h3>
+    <p style="text-align:center;">It's quick and easy.</p>
+
+    <div class="name">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Surname">
+    </div>
+
+    <label>Date of birth</label>
+    <input type="date">
+
+    <label>Gender</label>
+    <div class="gender">
+        <label><input type="radio" name="g"> Female</label>
+        <label><input type="radio" name="g"> Male</label>
+        <label><input type="radio" name="g"> Custom</label>
+    </div>
+
+    <input type="text" placeholder="Mobile number or email">
+    <input type="password" placeholder="New password">
+
+    <p class="text">
+        People who use our service may have uploaded your contact information.
+        Learn more.
+    </p>
+
+    <button class="signup-btn">Sign Up</button>
+
+    <p style="text-align:center;">
+        <a href="#">Already have an account?</a>
+    </p>
+</div>
+
+</body>
+</html>
