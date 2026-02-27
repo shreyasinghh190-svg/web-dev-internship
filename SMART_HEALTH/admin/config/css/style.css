@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #eb731def;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.main-header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+.main-header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight:400;
+}
+
+.main-header nav a:hover{
+    text-decoration: underline;
+}
+
+body{
+    padding-top: 50px;
+}
+
+/* HOME SECTION */
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    background: #f6c893ff;
+}
+
+.home-text{
+    width: 55%;
+}
+
+.home-text h1{
+    font-size: 42px;
+    color: #d06f07ff;
+    margin-bottom: 15px;
+}
+
+.home-text p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* BUTTON */
+.btn-start{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0b7a6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-start:hover{
+    background: #095f55;
+}
+
+/* IMAGE */
+.home-img img{
+    max-width: 120px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HOW IT WORKS */
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0 30px;
+}
+
+.steps{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.step-box{
+    background: #f1b45fff;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    border-radius: 3px 50px 3px 50px;
+    box-shadow: 0 5px 15px rgba(239, 214, 214, 0.94);
+}
+
+.step-box h3{
+    color: #c84a0bff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0b7a6b;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+body{
+        margin:0;
+        font-family:'Poppins', 'Roboto', sans-serif;
+        background: white;
+        min-height:50vh;
+    }
+
+    h1{
+        text-align:center;
+        padding:30px 0;
+        color:#31b1c4;
+        letter-spacing:1px;
+    }
+
+   .dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 40px 80px;
+
+
+    }
+
+    .card{
+        background:#fff;
+        border-radius:8px;
+        padding:25px;
+        text-align:center;
+        box-shadow:0 10px 25px;
+        transition:0.3s;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .card::before{
+       
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:6px;
+        background:linear-gradient(to right,#2196f3,#21cbf3);
+    }
+
+    .card:hover{
+        transform:translateY(-8px);
+        box-shadow:0 15px 35px rgba(36, 185, 190, 0.15);
+    }
+
+    .card h2{
+        margin-top:10px;
+        margin-bottom:8px;
+        color:#222;
+    }
+
+    .card p{
+        font-size:14px;
+        color:#666;
+        margin-bottom:20px;
+    }
+
+    .btn-group{
+        display:flex;
+        justify-content:center;
+        gap:12px;
+    }
+
+    button{
+        padding:9px 18px;
+        border:none;
+        border-radius:20px;
+        font-size:14px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .add-blue{background:#2196f3;color:#fff;}
+    .add-green{background:#4caf50;color:#fff;}
+    .add-yellow{background:#ffc107;color:#000;}
+    .add-cyan{background:#00bcd4;color:#fff;}
+
+    .view{
+        background:#f1f1f1;
+        color:#333;
+    }
+
+    button:hover{
+        opacity:0.85;
+        transform:scale(1.05);
+    }
+
+    .mapping{
+        margin:40px auto 0;
+        width:60%;
+    }
+
+    .logout{
+        text-align:center;
+        margin:40px 0;
+    }
+
+    .logout button{
+        background:#e53935;
+        color:#fff;
+        padding:12px 30px;
+        border-radius:25px;
+        font-size:16px;
+        box-shadow:0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    @media(max-width:768px){
+        .dashboard{
+            padding:0 20px;
+        }
+        .mapping{
+            width:90%;
+        }
+    }
